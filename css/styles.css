@@ -248,6 +248,14 @@ background-color: #ffffff;
 width: calc((100% - 72px) / 4);
 }
 
+.advant-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    background-color: var(--white-second);
+    margin-bottom: 8px;
+}
+
 .advant-title {
     color: var(--primary-text-color);
     font-size: 20px;
