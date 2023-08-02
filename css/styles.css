@@ -105,6 +105,23 @@ background-color: #ffffff;
 
 .header-list {
     padding: 24px 0;
+    display: block;
+}
+
+.current {
+    position: relative;
+}
+
+.current:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--lilac);
 }
 
 .header-address {
@@ -173,6 +190,8 @@ background-color: #ffffff;
 .advantages-section-list {
     padding: 188px 0;
     background: var(--logo-color-second);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
 }
 .head-text {
     color: var(--white);
@@ -550,4 +569,53 @@ img {
     letter-spacing: 0.32px;
     padding-top: 16px;
     width: 268px;
+}
+
+
+/*_____MODAL______*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-color-second rgba(46, 47, 66, 0.40));
+}
+
+.modal {
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background: var(--dairy, #FCFCFC);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal-btn:hover {
+    background-color: var(--lilac);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }

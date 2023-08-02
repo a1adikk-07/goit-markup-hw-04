@@ -23,7 +23,7 @@
                 <span class="header-logo-accent">Studio</span>
             </a>
             <ul class="menu-list list">
-                <li class="menu-link link"><a href="./index.html" class="header-list link">Studio</a></li>
+                <li class="menu-link link"><a href="./index.html" class="header-list link current">Studio</a></li>
                 <li class="menu-link link"><a href="./portfolio.html" class="header-list link">Portfolio</a></li>
                 <li class="menu-link link"><a href="" class="header-list link">Contacts</a></li>
             </ul>
@@ -47,7 +47,7 @@
         <section class="advantages-section-list">
             <div class="container">
             <h1 class="head-text">Effective Solutions for Your Business</h1>
-            <button class="head-btn" type="button">Order Service</button>
+            <button type="button" class="head-btn" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -58,6 +58,7 @@
             <h2 class="visually-hidden" hidden>Advantages</h2>
             <ul class="advantages-list list">
                 <li class="advantages-item">
+                    <div class=""></div>
                     <h3 class="advant-title">Strategy</h3>
                     <p class="advant-subtitle">
                         Our goal is to identify the business problem
@@ -151,5 +152,16 @@
             marketing & growth solutions.</p>
             </div>
     </footer>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="close-modal-btn" data-modal-close>
+                            <svg class="modal-icon" width="8" height="8">
+                                <use href="./images/icons.svg/#icon-icon-close-modal-w">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
