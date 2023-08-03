@@ -432,13 +432,8 @@ body {
 .customers-title {
     color: var(--logo-color-second);
     text-align: center;
-    font-size: 36px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
     margin-bottom: 72px;
 }
 
@@ -446,59 +441,51 @@ body {
 .customer-list {
     display: flex;
     gap: 24px;
-    width: calc((100% - 120px) / 6);
-
 }
 
-.customer-item {}
-
-
-.customers-link {
-    width: 100%;
-    width: 168px;
-    height: 100%;
+.customer-item {
+    width: calc((100% - 5 * 24px) / 6);
     height: 88px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    display: flex;
-    align-self: center;
-    padding: 16px 0;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-link:hover {
-    color: var(--lilac);
-    fill: var(--lilac);
-    border: 1px solid var(--lilac);
-}
-
-.customers-link:focus {
-    color: var(--lilac);
-    fill: var(--lilac);
-    border: 1px solid var(--lilac);
 }
 
 .customer-icon {
-    display: flex;
     fill: #8E8F99;
-    margin: 0 auto;
 }
 
-.customer-icon:hover {
-    fill: var(--lilac);
+.customers-link {
+    width: 168px;
+    height: 88px;
+    border: 1px solid rgba(142, 143, 153, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    fill: #8E8F99;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customer-icon:focus {
+.customers-link:hover,
+.customers-link:active {
     fill: var(--lilac);
+    border-color: var(--lilac);
 }
+
 
 /**_____FOOTER_____**/
 
 .footer {
     background: var(--logo-color-second);
+    flex-shrink: 0;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
 
 .footer-logo {
     color: var(--logo-color);
@@ -537,13 +524,17 @@ body {
     width: 268px;
 }
 
+.footer-soc-network container {
+    display: block;
+}
+
 .footer-soc-network {
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.foter-icon-title {
+.footer-icon-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -554,7 +545,6 @@ body {
 
 .footer-soc-icons-list {
     display: flex;
-    justify-content: center;
     gap: 16px;
 }
 
@@ -570,7 +560,7 @@ body {
 }
 
 .footer-icons-link:hover {
-    background-color: #39e039;
+    background-color: #31d0aa;
 }
 
 /**_____PORTFOLIO.HTML____**/
