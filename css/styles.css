@@ -398,7 +398,7 @@ body {
 .team-social-icons-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .soc-netvorks {
@@ -532,6 +532,12 @@ body {
     letter-spacing: 0.02em;
     color: var(--white);
     margin-bottom: 16px;
+}
+
+.footer-soc-icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
 
 .footer-icons-link {
