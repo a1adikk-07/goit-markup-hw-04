@@ -475,12 +475,18 @@ body {
     padding: 16px 0;
     color: #8E8F99;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link:hover,
-.customers-link:active {
-    color: var(--lilac #404bbf);
+.customers-link:hover {
     border-color: var(--lilac#404bbf);
+    color: var(--lilac #404bbf);
+}
+
+.customers-link:focus {
+    border-color: var(--lilac#404bbf);
+    color: var(--lilac #404bbf);
 }
 
 
@@ -651,6 +657,24 @@ img {
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.partfolio-btn:hover {
+    color: #ffffff;
+    background-color: #404BBF;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.partfolio-btn:focus {
+    color: #ffffff;
+    background-color: #404BBF;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .head-btn:hover,
 .head-btn:focus {
     background-color: var(--lilac);
@@ -661,17 +685,6 @@ img {
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.partfolio-btn:hover {
-    color: #ffffff;
-    background-color: #404BBF;
-    border: 1px solid transparent;
-}
-
-.partfolio-btn:focus {
-    color: #ffffff;
-    background-color: #404BBF;
-    border: 1px solid transparent;
-}
 
 .partfolio-list {
     display: flex;
