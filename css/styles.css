@@ -498,6 +498,10 @@ body {
     align-items: baseline;
 }
 
+.footer-texts {
+    margin-right: 120px;
+}
+
 
 .footer-logo {
     color: var(--logo-color);
