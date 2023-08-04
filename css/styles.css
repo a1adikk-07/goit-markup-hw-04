@@ -629,14 +629,18 @@ img {
     border: 1px solid #e7e9fc;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head-btn:hover {
-    background-color: var(--lilac);
-}
-
+.head-btn:hover,
 .head-btn:focus {
     background-color: var(--lilac);
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .partfolio-btn:hover {
@@ -679,10 +683,7 @@ img {
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-img:hover .overlay-text {
-    transform: translateY(0%);
-}
-
+.portfolio-img:hover .overlay-text,
 .portfolio-img:focus .overlay-text {
     transform: translateY(0%);
 }
@@ -691,6 +692,7 @@ img {
     color: var(--logo-color-second);
     font-weight: 500;
     font-size: 20px;
+    font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
